@@ -7,7 +7,7 @@
 3. When scanned using a mobile device:
    - Open the camera on the mobile device.
    - Allow the user to click a photo.
-   - Display the captured photo on the desktop screen in real time.
+   - Display the captured photo on the desktop screen in real-time.
 
 ---
 
@@ -19,7 +19,7 @@
 
 2. **QR Code Generation**:
    - Generate a QR code unique to the user session.
-   - QR code should include a unique URL or token that links to the photo upload page on the mobile.
+   - The QR code should include a unique URL or token that links to the photo upload page on the mobile.
 
 3. **Mobile Interaction**:
    - When the QR code is scanned, redirect to a mobile-friendly page with camera access.
@@ -60,7 +60,7 @@
 
 - **Frontend**:
   - A React/React Native mobile-friendly page accessible via the QR code.
-  - Use the browser’s camera access API (`navigator.mediaDevices.getUserMedia`) or React Native's camera libraries for mobile apps.
+  - Use `<input type="file" />` for uploading image (using camera or file upload).
 - **Backend**:
   - API endpoint to accept photo uploads.
   - Validate the session token from the QR code.
